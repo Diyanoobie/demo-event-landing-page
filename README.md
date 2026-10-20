@@ -1,5 +1,4 @@
-# demo-event-landing-page
-A demo event landing single page website for a beginner's startup event.
+
 # VentureVerse 2026: Event Landing Page
 
 Designed by **Diya Singh, 26CSE180**.
@@ -19,25 +18,14 @@ Single-page landing page for a fictional EDC JSSUN event, built for the Technica
 - `assets/`: EDC logo (plus a light version for the dark theme), hero background image and speaker images
 
 ## Features
-- **Countdown:** a band just below the hero counts down (days, hours, minutes, seconds) to 12 Nov 2026, 10:00 AM IST. Each digit that changes breaks into drifting grains and re-forms as the new digit. It shows "live" during the event and "ended" afterwards, and falls back to plain digits if the effect can't run.
+- **Countdown:** a band just below the hero counts down (days, hours, minutes, seconds) to 12 Nov 2026, 10:00 AM IST. 
 - **Demo registration form:** checks that every field is filled and the email format is valid, then shows a confirmation. It is a demo, so no data is saved or sent.
 - **Mobile menu:** below 768px the navigation collapses into a Menu button.
-
 - **Glass headline:** the hero title is real text; a WebGL2 canvas paints refractive glass over each word, and the light follows the mouse. If WebGL2 is unavailable or reduced motion is on, it falls back to the plain headline or a still frame.
-
-## Decisions
-- Plain HTML, CSS and JavaScript, no frameworks, to keep the code easy to explain.
-- Dark theme inspired by a reference conference landing page. Near-black blue background, white text, logo blue and teal for one headline fade, and lime only on buttons. No text glow; one 4px corner radius on panels.
-- CSS Grid and Flexbox for layout, with one breakpoint at 768px.
-
 ## Credits
 - EDC logo: provided by EDC JSSUN in the task brief.
 - Hero background image: supplied by the applicant (AI-generated image provided by the applicant for this task).
-- Speaker photos: supplied by the applicant as fictional placeholders. Speaker names, roles and companies are fictional.
-- Glass headline effect: adapted from the "Glass Headline Hero" React/WebGL component code supplied to me, rewritten as plain JavaScript and changed to draw on a transparent canvas over the hero image.
-- Vapor countdown effect: adapted from the "VaporCountdown" React component code supplied to me, rewritten as plain JavaScript, extended with a days column, and set to count to the event start.
 - Fonts: Bricolage Grotesque and Figtree via Google Fonts.
-
 ## AI disclosure
 I used Claude (Anthropic) to plan the page, generate the first draft of the code, and port the glass headline effect from React to plain JavaScript. I reviewed it, tested the features, and can explain each part.
 Also used dribble and 21st
